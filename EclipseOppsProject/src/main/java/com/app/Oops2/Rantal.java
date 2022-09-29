@@ -1,6 +1,6 @@
 package com.app.Oops2;
 
-public class Rantal extends PasscodeKey{
+public class Rantal {
 
 	public static void main(String[] args) {
 		Rooms r1 = new Rooms();

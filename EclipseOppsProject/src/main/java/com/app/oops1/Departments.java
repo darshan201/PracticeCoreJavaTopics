@@ -42,7 +42,7 @@ public class Departments {
 		System.out.println("Total expences : " + k + "$");
 	}
 
-	void Department() // constructor
+	Departments() // constructor
 	{
 		System.out.println("plese enter department (A,B,C,D)  : ");
 	}

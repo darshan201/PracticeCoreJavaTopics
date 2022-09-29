@@ -5,7 +5,7 @@ public class Hospital {
 	public static void main(String[] args) {
 
 		Departments d = new Departments();
-		d.Department();
+		
 		d.building();
 		d.expence();
 		Patient P = new Patient1();// upcasting
