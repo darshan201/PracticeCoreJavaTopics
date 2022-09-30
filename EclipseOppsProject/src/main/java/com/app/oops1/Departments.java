@@ -30,16 +30,16 @@ public class Departments {
 		}
 	}
 
-	public void expence() {
-		System.out.println("");
-		System.out.println("For total expences enter how many days you stay in hospital");
+	public String expence() {
+		
+		System.out.println('\n'+"For total expences enter how many days you stay in hospital");
 		Scanner i = new Scanner(System.in);
 		System.out.println("enter days : ");
 		int a = i.nextInt();
 
 		int k = a * 100;// local variable
-		System.out.println(" ");
-		System.out.println("Total expences : " + k + "$");
+		
+		return "Total expences : " + k + "$";
 	}
 
 	Departments() // constructor

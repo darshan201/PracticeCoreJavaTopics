@@ -8,7 +8,7 @@ public class Hospital {
 		
 		d.building();
 		d.expence();
-		Patient P = new Patient1();// upcasting
+		Patient P = new ChildPatient();// upcasting
 		P.details(1, "darshan");
 		P.details(2, "juli",16);
 	}
