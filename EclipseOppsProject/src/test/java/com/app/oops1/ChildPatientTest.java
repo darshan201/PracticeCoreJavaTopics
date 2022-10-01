@@ -19,7 +19,7 @@ public class ChildPatientTest {
 	public final void testDetailsIntStringLong() {
 		Patient p1 = new Patient();
 		
-		assertEquals(5 + "," + "darshan" + "," + "20l", p1.details(5, "darshan", 20l));
+		assertEquals(5 + "," + "darshan" + "," + "20l", p1.details(5, "darshan", 15));
 	}
 
 }

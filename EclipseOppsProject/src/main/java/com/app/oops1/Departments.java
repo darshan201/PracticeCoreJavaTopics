@@ -22,15 +22,15 @@ public class Departments {
 			System.out.println("**plese go to emergency department or call 911 or child problem  ");
 		}
 		System.out.println("");
+		
 		while (number == 'D') // while loop
 		{
 			System.out.println("[THIS IS CHILD CARE CENTER] ");
 			number++;
-
 		}
 	}
 
-	public String expence() {
+	public void expence() {
 		
 		System.out.println('\n'+"For total expences enter how many days you stay in hospital");
 		Scanner i = new Scanner(System.in);
@@ -39,7 +39,7 @@ public class Departments {
 
 		int k = a * 100;// local variable
 		
-		return "Total expences : " + k + "$";
+		System.out.println("Total expences : " + k + "$");
 	}
 
 	Departments() // constructor
