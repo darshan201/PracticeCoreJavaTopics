@@ -8,16 +8,21 @@ import userServices.BankServices;
 public class DifferentNameOfBanks {
 
 	public static Scanner inputName = new Scanner(System.in);
-
+int name ;
 	public void nameOfBanks() {
 
 		System.out.println("Please select Bank-Number " + '\n' + "1 = RBC" + '\n' + "2 = Scotia" + '\n' + "3 = CIBC");
 
 		try {
 
-			int name = inputName.nextInt();
+			 name = Integer.parseInt(inputName.next()) ;
+			
+		} catch (NumberFormatException InputError) {
+			System.out.println("please enter valid number for bank selection" + '\n');
 
-			switch (name) {
+		}
+
+			switch (name)  {
 			case 1:
 				System.out.println("Welcome to RBC Bank");
 				break;
@@ -35,10 +40,7 @@ public class DifferentNameOfBanks {
 
 			// InputName.close();
 
-		} catch (InputMismatchException InputError) {
-			System.out.println("please enter valid number for bank selection" + '\n');
-
-		}
+		
 
 		BankServices nameOfService = new BankServices();
 		nameOfService.services();

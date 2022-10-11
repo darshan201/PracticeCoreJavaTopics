@@ -34,16 +34,18 @@ public class AccountHolderData {
 	public static Scanner Inputuser = new Scanner(System.in);
 
 	public void username() {
+		System.out.println("UserName : ");
 		try {
-			System.out.println("UserName : ");
+			
 			String Name = Inputuser.nextLine();
 			setAccountHolderName(Name);
-			System.out.println(" WELCOME " + getAccountHolderName().toUpperCase());
+			
 
 		} catch (NoSuchElementException ElementException) {
 			System.out.println("please enter valid Name in String ");
 			
 		}
+		System.out.println(" WELCOME " + getAccountHolderName().toUpperCase());
 
 	}
 
