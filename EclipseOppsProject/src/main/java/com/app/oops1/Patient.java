@@ -4,13 +4,13 @@ public class Patient {
 
 	final long l = 15;
 
-	String details(int a, String s) // method overloading
+	void details(int a, String s) // method overloading
 	{
-		return "patient number : " + a + " ,patient name :" + s;
+		System.out.println("patient number : " + a + " ,patient name :" + s);
 	}
 
-	String details(int a, String s, long l) {
-		return a + "," + s + "," + l;
+	void details(int a, String s, long l) {
+		System.out.println(a + "," + s + "," + l);
 	}
 }
 

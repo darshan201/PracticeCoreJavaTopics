@@ -22,23 +22,24 @@ public class Departments {
 			System.out.println("**plese go to emergency department or call 911 or child problem  ");
 		}
 		System.out.println("");
-		
+
 		while (number == 'D') // while loop
 		{
 			System.out.println("[THIS IS CHILD CARE CENTER] ");
 			number++;
 		}
+		s.close();
 	}
 
 	public void expence() {
-		
-		System.out.println('\n'+"For total expences enter how many days you stay in hospital");
+
+		System.out.println('\n' + "For total expences enter how many days you stay in hospital");
 		Scanner i = new Scanner(System.in);
 		System.out.println("enter days : ");
 		int a = i.nextInt();
-
+		i.close();
 		int k = a * 100;// local variable
-		
+
 		System.out.println("Total expences : " + k + "$");
 	}
 
@@ -46,4 +47,5 @@ public class Departments {
 	{
 		System.out.println("plese enter department (A,B,C,D)  : ");
 	}
+
 }
