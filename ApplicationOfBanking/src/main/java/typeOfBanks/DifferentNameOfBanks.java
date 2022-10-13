@@ -11,34 +11,34 @@ public class DifferentNameOfBanks {
 int name ;
 	public void nameOfBanks() {
 
-		System.out.println("Please select Bank-Number " + '\n' + "1 = RBC" + '\n' + "2 = Scotia" + '\n' + "3 = CIBC");
+		System.out.println("Please select Bank-Number " + '\n'+'\n' + "1 = RBC" + '\n' + "2 = Scotia" + '\n' + "3 = CIBC");
 
 		try {
 
 			 name = Integer.parseInt(inputName.next()) ;
 			
 		} catch (NumberFormatException InputError) {
-			System.out.println("please enter valid number for bank selection" + '\n');
+			System.out.println('\n'+"please enter valid number for bank selection" + '\n');
 
 		}
 
 			switch (name)  {
 			case 1:
-				System.out.println("Welcome to RBC Bank");
+				System.out.println('\n'+"Welcome to [ RBC BANK ]"+ '\n');
 				break;
 
 			case 2:
-				System.out.println("welcome to Scotia Bank");
+				System.out.println('\n'+"welcome to [ SCOTIA BANK ]"+ '\n');
 				break;
 			case 3:
-				System.out.println("Welcome to CIBC Bank");
+				System.out.println('\n'+"Welcome to [ CIBC BANK ]"+ '\n');
 				break;
 			default:
-				System.out.println("please enter valid number " + '\n');
+				System.out.println('\n'+"please enter valid number " + '\n');
 				nameOfBanks();
 			}
 
-			// InputName.close();
+			
 
 		
 

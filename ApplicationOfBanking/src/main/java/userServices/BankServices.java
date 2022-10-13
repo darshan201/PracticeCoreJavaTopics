@@ -16,7 +16,7 @@ public class BankServices {
 	public void services() {
 
 		try {
-			System.out.println("select service you need" + '\n' + "  Account " + '\n' + " Insurance ");
+			System.out.println("select service you need" + '\n'+ '\n' + "  Account " + '\n' + " Insurance ");
 
 			userInput = inputService.nextLine();
 		} catch (NoSuchElementException NoSuchElement) {
@@ -42,6 +42,7 @@ public class BankServices {
 			AccountHolderData userData = new AccountHolderData();
 			userData.username();
 			userData.useraccountnumber();
+			
 
 		} else {
 			System.out.println("plese select valid service");

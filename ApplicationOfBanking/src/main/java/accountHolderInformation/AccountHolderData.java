@@ -1,6 +1,6 @@
 package accountHolderInformation;
 
-import java.util.NoSuchElementException;
+
 import java.util.Scanner;
 
 public class AccountHolderData {
@@ -41,24 +41,26 @@ public class AccountHolderData {
 			setAccountHolderName(Name);
 			
 
-		} catch (NoSuchElementException ElementException) {
+		} catch (NumberFormatException ElementException) {
 			System.out.println("please enter valid Name in String ");
 			
 		}
-		System.out.println(" WELCOME " + getAccountHolderName().toUpperCase());
+		System.out.println(" WELCOME : " + getAccountHolderName().toUpperCase());
 
 	}
 
 	public void useraccountnumber() {
 		try {
 			System.out.println("Account NUmber : ");
-			int number = Inputuser.nextInt();
+			int number = Integer.parseInt(Inputuser.next());
 			setAccountnumber(number);
 			System.out.println("Account number is : " + getAccountnumber());
-		} catch (NoSuchElementException ElementException) {
+		} catch (NumberFormatException ElementException) {
 			System.out.println("please enter valid number in integer");
-
+			useraccountnumber();
 		}
+		
+		
 
 	}
 

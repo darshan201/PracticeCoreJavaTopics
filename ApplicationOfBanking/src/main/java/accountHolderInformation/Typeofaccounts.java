@@ -4,13 +4,13 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Typeofaccounts {
-
+	int accountType;
 	public void accountType() {
 
 		try {
 			System.out.println("select account type : 1= saving , 2 = checking ");
 			Scanner inputAccountType = new Scanner(System.in);
-			int accountType = inputAccountType.nextInt();
+			accountType = inputAccountType.nextInt();
 			switch (accountType) {
 			case 1:
 				System.out.println("Saving account ");
@@ -30,6 +30,9 @@ public class Typeofaccounts {
 		} catch (NoSuchElementException ElementException) {
 			System.out.println("please enter valid account Type");
 		}
-
+		if (accountType == 1 || accountType == 2) {}
+		else {
+		accountType();
+		}
 	}
 }
